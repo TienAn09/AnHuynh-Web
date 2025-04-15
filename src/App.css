@@ -1,0 +1,91 @@
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.navigation {
+  width: 240px;
+  background-color: #070606;
+  padding: 20px;
+  border-right: 2px solid #333;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-header {
+  font-size: 45px;
+  font-weight: bold;
+  color: #dbd2d2;
+  margin: 0 0 20px 0;
+  text-align: center;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.navigation li {
+  margin-bottom: 15px;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #868686;
+  font-weight: 500;
+}
+
+.navigation a:hover {
+  color: #ffffff;
+}
+
+.nav-icon {
+  font-size: 20px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.nav-link {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+/* Style cho mục tài khoản với hình tròn */
+.account-link {
+  display: flex;
+  align-items: center;
+}
+
+.account-circle {
+  width: 30px;
+  height: 30px;
+  background-color: #333;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.account-icon {
+  font-size: 16px;
+  color: #ddd;
+}
+
+/* Đẩy Setting và Tài Khoản xuống dưới cùng */
+.nav-bottom {
+  margin-top: auto;
+}
+
+/* Style cho đường gạch ngang */
+.divider {
+  width: 98%;
+  height: 1px;
+  background-color: #333;
+  margin: 10px auto;
+}
