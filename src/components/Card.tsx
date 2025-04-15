@@ -1,4 +1,5 @@
 // src/components/Card.js
+import React from 'react';
 import './Card.css';
 
 function Card({ orientation, title, content }) {

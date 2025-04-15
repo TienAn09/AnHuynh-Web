@@ -1,6 +1,6 @@
-// src/components/Modal.js
 import './Modal.css';
 import Card from '../components/Card';
+import React from 'react';
 function Modal({ isOpen, onClose, children }) {
   if (!isOpen) return null;
   return (

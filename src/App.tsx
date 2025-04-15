@@ -1,9 +1,10 @@
 // src/App.js
 import { useState } from 'react';
 import { FaHome, FaTools, FaEnvelope, FaUser, FaCog } from 'react-icons/fa';
-import Modal from '../components/Modal';
-import Cards from '../components/Cards';
+import Modal from './components/Modal';
+import Cards from './components/Card';
 import './App.css';
+import React from 'react';
 
 // Component cho Navigation
 function Navigation({ openModal }) {
@@ -47,7 +48,6 @@ function Navigation({ openModal }) {
 }
 
 function App() {
-  const [count, setCount] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = (e) => {
@@ -63,8 +63,8 @@ function App() {
     <div className="app-container">
       <Navigation openModal={openModal} />
       <div className="main-content">
-        <Modal isOpen={isModalOpen} onClose={closeModal}>
-          <Cards />
+        <Modal isOpen={isModalOpen} onClose={closeModal} children={undefined}>
+       
         </Modal>
       </div>
     </div>
